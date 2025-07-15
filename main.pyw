@@ -392,7 +392,7 @@ class DOSEmulator:  # Основной класс нашей оболочки
         elif command.lower() == 'dir':
             self.show_dir_contents()
             return
-        elif command.lower().startswith('read '):  # считыватель
+        elif command.lower().startswith('type '):  # Считыватель
             self.read_file(command[5:].strip())
             return
         elif command.lower() == 'ver':
@@ -497,7 +497,7 @@ class DOSEmulator:  # Основной класс нашей оболочки
 ║exit      - Exit the emulator       ║█
 ║cd <dir>  - Change directory        ║█
 ║dir       - List directory contents ║█
-║read <file> - Show file contents    ║█
+║type <file> - Show file contents    ║█
 ║ver       - Show version information║█
 ╚════════════════════════════════════╝█
  ██████████████████████████████████████
